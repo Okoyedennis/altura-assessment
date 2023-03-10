@@ -1,0 +1,70 @@
+:root {
+  --background: #000;
+  --white: #fff;
+  --text-gradient-bg: rgb(105, 234, 203);
+  --text-gradient-1: linear-gradient(
+    90deg,
+    rgba(105, 234, 203, 1) 0%,
+    rgba(234, 204, 248, 1) 50%,
+    rgba(102, 84, 241, 1) 100%
+  );
+  --btn-bg: #2f80ed;
+  --bg-blob: rgba(143, 0, 255, 0.35);
+  --card-border: #282525;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--white);
+}
+
+.absolute-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.max-width {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.cur-po {
+  cursor: pointer;
+}
+
+.heading-gradient {
+  background: var(--text-gradient-bg);
+  background: var(--text-gradient-1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slick-dots{
+  bottom: -5rem !important;
+} 
+
+.slick-dots li button:before {
+   
+    color: var(--white ) !important;
+font-size: .5rem !important;
+}
+
+@media (max-width: 1536px) {
+  .max-width {
+    width: 90%;
+  }
+}
+
+/* =========== custom scroll-bar ========= */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #343444;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: linear-gradient(-45deg, #e250e5, #4b50e6, #e250e5, #4b50e6);
+}
